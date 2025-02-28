@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lasles VPN project using Tailwind css</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="font-primary">
+    <!-- header setion -->
+    <header class="fixed top-0 right-0 left-0 shadow-md z-50 bg-white">
+        <nav class="max-w-[1440px] container mx-auto px-4 py-4 flex items-center justify-between" >
+            <!-- logo -->
+             <a href="/src/index.html">
+                <div class="text-2xl flex items-center gap-2">
+                    <img class="h-8" src="./images/logo.png" alt="logo">
+                    <p class="text-heading-text font-semibold">Lasles <span class="font-bold">VPN</span></p>
+                 </div>
+             </a>
+            
+            <!-- Menu links -->
+             <ul class="hidden md:flex items-center space-x-8">
+                <li>
+                    <a class="text-primary-text hover:text-primary" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="text-primary-text hover:text-primary" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="text-primary-text hover:text-primary" href="#pricing">Pricing</a>
+                </li>
+                <li>
+                    <a class="text-primary-text hover:text-primary" href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                    <a class="text-primary-text hover:text-primary" href="#help">Help</a>
+                </li>
+             </ul>
+
+             <!-- Auth buttons -->
+             <div class="font-semibold space-x-4">
+                <button class="text-heading-text hover:cursor-pointer max-md:hidden">Sign In</button>
+                <button class="text-primary bg-white border rounded-full border-solid border-primary hover:bg-primary hover:text-white hover:border-white hover:cursor-pointer px-4 py-2">Sign Up</button>
+             </div>
+        </nav> 
+    </header>
+    <!-- hero section -->
+    <!-- About -->
+     <section id="about" class="max-md:flex-col max-w-[1440px] container mx-auto px-4 py-24 flex flex-row items-center gap-16">
+        <!-- left content -->
+        <div class="w-1/2 max-md:w-full max-md:mb-6 mb-0 space-y-8" data-aos="fade-right">
+            <p class="text-heading-text font-semibold max-lg:text-5xl max-md:text-4xl text-6xl leading-normal">Want anything to be <br class="lg:block hidden"> easy with <span class="font-bold">LaslesVPN.</span></p>
+            <p class="text-primary-text text-lg leading-relaxed">Provide a network for all your needs with ease and fun using <span class="font-bold">LaslesVPN</span> discover interesting features from us.</p>
+            <button class="text-white pt-4 text-lg font-medium px-10 py-2.5 border border-primary rounded-[6px] bg-primary hover:cursor-pointer hover:shadow-[-1px_12px_16px_var(--color-secondary)] ">Get Started</button>
+        </div>
+        <!-- right content -->
+        <div class="w-1/2" data-aos="fade-left">
+            <img src="./images/banner.png" alt="banner" class="max-md:w-full">
+        </div>
+     </section>
+
+     <!-- statistics section -->
+      <section class="section-container">
+        <div class=" bg-white rounded-xl shadow-lg p-8" data-aos="fade-up">
+            <div class="flex flex-row max-md:flex-col justify-between items-center divide-x max-md:divide-x-0 max-md:divide-y divide-gray-200">
+                <!-- user stasts -->
+                <div class="flex items-center gap-6 px-12 max-md:py-6 py-0">
+                    <div class="p-5 shrink-0 bg-icons border border-icons rounded-full ">
+                        <img src="./images/user.png" alt="user icon" class="size-8">
+                    </div>
+                    <div>
+                        <h3 class="text-heading-text text-3xl font-bold">90+</h3>
+                        <p class="text-primary-text">Users</p>
+                    </div>
+                </div>
+                <!-- location stats -->
+                <div class="flex items-center gap-6 px-12 max-md:py-6 py-0">
+                    <div class="p-5 shrink-0 bg-icons border border-icons rounded-full ">
+                        <img src="./images/location.png" alt="location icon" class="size-8">
+                    </div>
+                    <div>
+                        <h3 class="text-heading-text text-3xl font-bold">30+</h3>
+                        <p class="text-primary-text">Locations</p>
+                    </div>
+                </div>
+                <!-- server stats -->
+                <div class="flex items-center gap-6 px-12 max-md:py-6 py-0">
+                    <div class="p-5 shrink-0 bg-icons border border-icons rounded-full ">
+                        <img src="./images/storage.png" alt="server icon" class="size-8">
+                    </div>
+                    <div>
+                        <h3 class="text-heading-text text-3xl font-bold">50+</h3>
+                        <p class="text-primary-text">Servers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Features section -->
+       <section class="section-container" id="features">
+            <div class="bg-white p-8">
+                <div class="flex flex-row max-md:flex-col items-center justify-between gap-12">
+                    <!-- right section -->
+                    <div class="md:w-1/2" data-aos="fade-left">
+                        <img src="./images/features.png" alt="features">
+                    </div>
+                    <!-- left section -->
+                    <div class="md:w-1/2 space-y-8" data-aos="fade-right">
+                        <h2 class="text-heading-text font-semibold text-4xl leading-tight">We Provide Many <br> Features You Can Use</h2>
+                        <p class="text-primary-text leading-relaxed w-2/3">You can explore the features that we provide with fun and have their own functions each feature.</p>
+                        
+                        <ul class="space-y-5">
+                            <li class="flex items-center gap-3">
+                                <div class="bg-check rounded-full flex justify-center items-center size-6">
+                                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                                </div>
+                                <span class="text-primary-text leading-relaxed">Powerfull online protection.</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="bg-check flex justify-center items-center size-6 rounded-full">
+                                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                                </div>
+                                <span class="text-primary-text leading-relaxed">Internet without borders.</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="bg-check flex justify-center items-center size-6 rounded-full">
+                                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                                </div>
+                                <span class="text-primary-text leading-relaxed">Supercharged VPN.</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="bg-check flex justify-center items-center size-6 rounded-full">
+                                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                                </div>
+                                <span class="text-primary-text leading-relaxed">No specific time limits.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       </section>
+       
+       <!-- Pricing section -->
+        <section class="section-container bg-gray-50" id="pricing">
+            <div class="text-center mb-16">
+                <h2 class="text-heading-text font-semibold text-4xl leading-tight mb-4">Choose Your Plan</h2>
+                <p class="text-primary-text leading-relaxed">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+            </div>
+            <!-- cards -->
+            <div class="grid grid-cols-3 max-md:grid-cols-1 mx-auto gap-8 max-w-6xl">
+                <!-- card1 -->
+                <div class="bg-white border-gray-200 border-2 flex flex-col items-center p-8 rounded-md hover:border-primary hover:cursor-pointer transition duration-300 hover:scale-110" data-aos="fade-up">
+                    <img src="./images/box.png" alt="box image" class="w-32 mb-8">
+                    <h3 class="text-heading-text font-bold mb-8">Free Plan</h3>
+                    <ul class="text-primary-text space-y-4 mb-8 flex-grow">
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Unlimited Bandwitch</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Encrypted Connection</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>No Traffic Logs</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Works on All Devices</span>
+                        </li>
+                    </ul>
+                    <div class="text-center space-y-4">
+                        <h2 class="text-heading-text font-semibold text-2xl">Free</h2>
+                        <button class="text-primary font-semibold border border-solid border-primary rounded-full px-16 py-2 hover:text-white hover:bg-primary hover:shadow-lg hover:shadow-primary hover:cursor-pointer transition duration-300">Start</button>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div class="bg-white border-gray-200 border-2 flex flex-col items-center justify-around p-8 rounded-md hover:border-primary hover:cursor-pointer transition duration-300 hover:scale-110" data-aos="fade-up">
+                    <img src="./images/box.png" alt="box image" class="w-32 mb-8">
+                    <h3 class="text-heading-text font-bold mb-8">Standard Plan</h3>
+                    <ul class="text-primary-text space-y-4 mb-8 flex-grow">
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Unlimited Bandwitch</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Encrypted Connection</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Yes Traffic Logs</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Works on All Devices</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Connect Anyware</span>
+                        </li>
+                    </ul>
+                    <div class="text-center space-y-4">
+                        <h2 class="text-heading-text font-semibold text-2xl">$9 <span class="text-primary-text">/ mo</span></h2>
+                        <button class="text-primary font-semibold border border-solid border-primary rounded-full px-16 py-2 hover:text-white hover:bg-primary hover:shadow-lg hover:shadow-primary hover:cursor-pointer transition duration-300">Start</button>
+                    </div>
+                </div>
+                 <!-- card3 -->
+                <div class="bg-white border-gray-200 border-2 flex flex-col items-center justify-around p-8 rounded-md hover:border-primary hover:cursor-pointer transition duration-300 hover:scale-110" data-aos="fade-up">
+                    <img src="./images/box.png" alt="box image" class="w-32 mb-8">
+                    <h3 class="text-heading-text font-bold mb-8">Premium Plan</h3>
+                    <ul class="text-primary-text space-y-4 mb-8 flex-grow">
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Unlimited Bandwitch</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Encrypted Connection</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>No Traffic Logs</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Works on All Devices</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-check" style="color: var(--color-check);"></i>
+                            </div>
+                            <span>Get New Features</span>
+                        </li>
+                    </ul>
+                    <div class="text-center space-y-4">
+                        <h2 class="text-heading-text font-semibold text-2xl">$12 <span class="text-primary-text">/ mo</h2>
+                        <button class="text-primary font-semibold border border-solid border-primary rounded-full px-16 py-2 hover:text-white hover:bg-primary hover:shadow-lg hover:shadow-primary hover:cursor-pointer transition duration-300">Start</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Network section -->
+         <section class="section-container bg-gray-50">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-heading-text font-semibold text-4xl leading-tight">Huge Global Network <br> of Fast VPN</h2>
+                <p class="text-primary-text leading-relaxed">See <span class="font-bold">LaslesVPN</span> everywhere to make it easier for you when you move <br> locations.</p>
+            </div>
+            <img src="./images/map.png" alt="map image" class="mx-auto mb-16 w-full">
+            <div class="flex items-center justify-center gap-12 flex-wrap opacity-75">
+                <img src="./images/netflix.png" alt="netflix image" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+                <img src="./images/reddit.png" alt="reddit image" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+                <img src="./images/amazon.png" alt="amazon image" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+                <img src="./images/discord.png" alt="discord image" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+                <img src="./images/spotify.png" alt="spotify image" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+            </div>
+         </section>
+
+        <!-- Testimonials section -->
+         <section class="section-container" id="testimonials">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-heading-text font-semibold text-4xl leading-tight">Trusted by Thousands of <br> Happy Customer</h2>
+                <p class="text-primary-text leading-relaxed">These are the stories of our customers who have joined us with great <br> pleasure when using this crazy feature.</p>
+            </div>
+            <!-- Testimonials Slider -->
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Testimonials will be inserted here by JavaScript -->
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="flex justify-between items-center mt-12">
+                    <!-- Pagination Dots -->
+                    <div class="swiper-pagination !relative !bottom-0 !w-auto">
+                        
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <div class="flex sm:!flex lg:!flex xl:!flex gap-4">
+                        <div class="prev !static !w-[60px] !h-[60px] flex items-center justify-center rounded-full border-2 border-[#F53855] text-[#F53855] hover:bg-red-200 hover:text-white transition-all after:!content-['']">
+                        <img src="./images/arrow-left.png" alt="arrow-left" class="w-6 h-6">
+                        </div>
+                        <div class="next !static !w-[60px] !h-[60px] flex items-center justify-center rounded-full bg-[#F53855] text-white hover:opacity-90 transition-all after:!content-['']">
+                            <img src="./images/arrow-right.png" alt="arrow-right" class="w-6 h-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+         <!-- Subscribe section -->
+         <section class="section-container" id="subscribe
+            <div class="flex items-center justify-between shadow-lg hover:shadow-2xl transition-all p-8 lg:p-16 md:p-12 max-md:flex-col gap-8 rounded-xl">
+                <div>
+                    <h2 class="text-heading-text text-4xl max-lg:text-3xl max-md:text-2xl leading-tight font-semibold mb-4">Subscribe Now for <br> Get Special Features!</h2>
+                    <p class="text-primary-text leading-relaxed">Let's subscribe with us and find the fun.</p>
+                </div>
+                <button class="text-white font-bold bg-primary lg:px-16 md:px-12 px-8 lg:py-4 py-3 rounded-xl hover:cursor-pointer hover:shadow-lg hover:shadow-primary transition-all duration-500 ">Subscribe Now</button>
+            </div>
+         </section>
+
+         <!-- footer section -->
+          <footer class="section-container">
+             <div class="bg-gray-50 grid grid-cols-5 max-lg:grid-cols-2 max-md:grid-cols-1 gap-12 py-4">
+                <div class="flex flex-col items-start gap-5 col-span-2">
+                    <div class="text-2xl flex items-center gap-2 mb-1">
+                        <img class="h-8" src="./images/logo.png" alt="logo">
+                        <p class="text-heading-text font-semibold">Lasles <span class="font-bold">VPN</span></p>
+                    </div>
+                    <p class="text-primary-text"><span class="font-bold">LaslesVPN</span> is a private virtual network that <br> has unique features and has high security.</p>
+                    <div class="flex items-center gap-2">
+                        <a href="/" class="shadow-md hover:shadow-lg transition-all duration-500 hover:translate-y-1 bg-primary rounded-full">
+                            <img src="./images/facebook.png" alt="facebook image" class="size-8">
+                        </a>
+                        <a href="/" class="shadow-md hover:shadow-lg transition-all duration-500 hover:translate-y-1 bg-primary rounded-full">
+                            <img src="./images/twitter.png" alt="twitter image" class="size-8">
+                        </a>
+                        <a href="/" class="shadow-md hover:shadow-lg transition-all duration-500 hover:translate-y-1 bg-primary rounded-full">
+                            <img src="./images/instagram.png" alt="instagram image" class="size-8">
+                        </a>
+                    </div>
+                    <p class="text-primary-text">&copy;2020LaslesVPN</p>
+                </div>
+                <div>
+                    <h3 class="text-heading-text font-semibold text-2xl mb-5">Product</h3>
+                    <ul class="text-primary-text space-y-3">
+                        <li>Download </li>
+                        <li>Pricing</li>
+                        <li>Locations</li>
+                        <li>Server</li>
+                        <li>Countries</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-heading-text font-semibold text-2xl mb-5">Engage</h3>
+                    <ul class="text-primary-text space-y-3">
+                        <li>LaslesVPN ?</li>
+                        <li>FAQ</li>
+                        <li>Tutorials</li>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-heading-text font-semibold text-2xl mb-5">Earn Money</h3>
+                    <ul class="text-primary-text space-y-3">
+                        <li>Affiliate</li>
+                        <li>Become Partner</li>
+                    </ul>
+                </div>
+             </div>
+          </footer>
+
+    
+
+
+
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+    
+</body>
+</html>
